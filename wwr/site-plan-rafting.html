@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="The rafting site plan includes all the information that is needed to develop a good website, like the site purpose, target audience, branding information and style guide.">
+    <meta name="author" content="Luciano Armando Vilete | WDD130">
+    <link  rel="stylesheet" href="styles/site-plan-rafting.css">
+</head>
+<body>
+    <header>
+        <h1>Rafting Site Plan</h1>
+        <p>Luciano Armando Vilete</p>
+    </header>
+    <main>
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>The purpose of this site is presenting the rafting as a very good oportunity to have an outdoor activity and great experiences with your family and friends.</p>
+        <h3>Audience</h3>
+        <p>You! You that feel inside of you an adventurous spirit. That wants to have special experiences and moments on nature, on a radical and social activity, come to now more about the rafting!</p>
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <img  src="wwr/images/brownrafting.jpeg" alt="Rafting Site Logo">
+        <h2>Style Guide</h2>
+        <h3>Color Pallete</h3>
+        <p>Palete URL: <a href="https://coolors.co/26547c-ef476f-ffd166-06d6a0" target="_blank">https://coolors.co/26547c-ef476f-ffd166-06d6a0</a></p>
+            <ul>
+                <li><strong>Primary-Color:</strong> YinMin Blue #26547C</li>
+                <li><strong>Secondary-Color:</strong> Bright Pink (Crayola) #EF476F</li>
+                <li><strong>Accent1-Color:</strong> Sunglow #FFD166</li>
+                <li><strong>Accent2-Color:</strong> Emerald #06D6A0</li>
+            </ul>
+        <h3>Typography</h3>
+        <h4>Headings Example Font</h4>
+        <h4>Normal Text/Paragraph Example Font</h4>
+        <p></p>
+        <h4>Colored Callout Example Font</h4>
+        <p></p>
+        <h3>Navigation</h3>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Trips</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <h2>Wireframes</h2>
+        <h3>Home Page Wireframe</h3>
+        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
+        <h3>About Us Page Wireframe</h3>
+        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700">
+    </main>
+    <footer>
+        <p>&copy;2024 | Rafting Site Document | Luciano Armando Vilete | WDD 130</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
