@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+:root {
+    --primary-color: #26547C;
+    --secondary-color: #EF476F;
+    --accent1-color: #FFD166;
+    --accent2-color: #06D6A0;
+    --heading-font: UnifrakturMaguntia, serif;
+    --paragraph-font: Macondo, serif;
+    --nav-background-color: #26547C;
+    --nav-link-color: #EF476F;
+    --nav-hover-link-color: #06D6A0;
+    --nav-hover-background-color: #FFD166;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+head h1 {
+    position: absolute;
+}
+
+article {
+    position: absolute;
+}
+
+article img {
+    float: right;
+}
