@@ -60,9 +60,14 @@ aside img {
     height: auto;
 }
 
-header, .grid, footer {
-    max-width: 840px;
+header, footer, .grid {
     margin: 0 auto;
+    max-width: 840px;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 footer {
@@ -78,9 +83,4 @@ footer {
     border: 1px solid rgba(0,0,0,.1);
     background-color: #ddd;
     color: #000;
-}
-
-.grid {
-    display: grid;
-    align-items: center;
 }
