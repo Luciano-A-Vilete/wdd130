@@ -13,6 +13,43 @@
     --nav-hover-background-color: #FFD166;
 }
 
+header {
+    grid-row: 1/5;
+    border-top: 1px solid;
+    border-color: #ccc;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    column-count: 2;
+    column-gap: 40px;
+}
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
