@@ -66,6 +66,14 @@ body {
     height: auto;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
 head h1 {
     position: absolute;
 }
