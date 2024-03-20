@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link  rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Luciano Vilete | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label>Full Name: <input  type="text" id="fullname" name="fullname"></label>
+                </div>
+                <div class="form-item column2">
+                    <label>Email: <input type="email" id="email" name="email"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label>What is your favorite browser: </label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="mozilla">Mozilla</option>
+                        <option value="brave">Brave</option>
+                    </select>
+                </div>
+                <div class="item-form column1">
+                    <label>Do you have a household pet? <input type="checkbox" id="pet" name="pet"></label>
+                </div>
+                <label>List the places you have lived: <textarea id="feedback" name="feedback" rows="4" placeholder="São Paulo Brazil, Recife Brazil, Olinda Brazil"></textarea></label>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2024 | HTML Form - User Poll Activity | Luciano Vilete</p>
+    </footer>
+</body>
+</html>
