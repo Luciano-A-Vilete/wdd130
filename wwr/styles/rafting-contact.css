@@ -1,0 +1,171 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+    background-color: #26547C;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 75px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Employee Profiles Styles */
+section {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+}
+
+.contact-info {
+    display: flex;
+}
+
+section figure {
+    flex: 0 0 30%; /* Adjust the width as needed */
+    text-align: center;
+}
+
+section figure img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    height: 30%;
+    border-radius: 0; /* Remove border radius */
+}
+
+section figure figcaption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+h1, h2 {
+    color: #26547C;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #26547C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1d3e5f;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #26547C;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.additional-link {
+    margin-bottom: 20px;
+}
+
+.additional-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-link a:hover {
+    text-decoration: underline;
+}
+
+.sociallinks {
+    margin-top: 20px;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+}
