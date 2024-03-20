@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>HTML & CSS Quiz</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Quiz Form -->
+        <form id="quizForm">
+            <!-- Question 1 (Text Input) -->
+            <fieldset>
+                <legend>Question 1:</legend>
+                <label for="q1">What does HTML stand for?</label><br>
+                <input type="text" id="q1" name="q1" required>
+            </fieldset>
+
+            <!-- Question 2 (Textarea) -->
+            <fieldset>
+                <legend>Question 2:</legend>
+                <label for="q2">Which CSS property is used to control the spacing between lines of text?</label><br>
+                <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+            </fieldset>
+
+            <!-- Question 3 (Select) -->
+            <fieldset>
+                <legend>Question 3:</legend>
+                <label for="q3">Which tag is used to define an unordered list in HTML?</label><br>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="ul">&lt;ul&gt;</option>
+                    <option value="ol">&lt;ol&gt;</option>
+                    <option value="li">&lt;li&gt;</option>
+                </select>
+            </fieldset>
+
+            <!-- Question 4 (Integer Input) -->
+            <fieldset>
+                <legend>Question 4:</legend>
+                <label for="q4">What is 2 + 2?</label><br>
+                <input type="number" id="q4" name="q4" min="0" step="1" required>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 HTML & CSS Quiz</p>
+    </footer>
+
+</body>
+</html>

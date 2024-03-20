@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    max-width: 630px;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 600px; /* Added */
+    margin: 0 auto; /* Added */
+    padding: 2rem;
+    background-color: #fff; /* Added */
+    border-radius: 10px; /* Added */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added */
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset {
+    margin: 1rem 0;
+    border: 1px solid #ccc; /* Updated */
+    border-radius: 8px; /* Added */
+    padding: 1rem;
+}
+
+fieldset:first-of-type {
+    margin-top: 0;
+}
+
+legend {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px; /* Added */
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: calc(100% - 20px); /* Updated */
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+footer {
+    max-width: 655px;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    padding: .3rem;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    left: 0;
+}
