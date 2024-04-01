@@ -22,13 +22,21 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: space-between;
-    align-items: center;
     background-color: var(--nav-background-color);
-    padding: 10px;
+    padding:2px;
+    height: 100px;
+    width:195%;
+}
+
+nav img {
+    width: 5%;
 }
 
 nav a {
+    justify-content: end;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 5px 10px;
