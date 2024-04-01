@@ -1,95 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
-
-:root {
-    --primary-color: #26547C;
-    --secondary-color: #EF476F;
-    --accent1-color: #FFD166;
-    --accent2-color: #06D6A0;
-    --heading-font: UnifrakturMaguntia, serif;
-    --paragraph-font: Macondo, serif;
-    --nav-background-color: #26547C;
-    --nav-link-color: #EF476F;
-    --nav-hover-link-color: #06D6A0;
-    --nav-hover-background-color: #FFD166;
-}
-
-header {
-    grid-row: 1/5;
-    border-top: 1px solid;
-    border-color: #ccc;
-    margin-top: 20px;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    background-color: var(--nav-background-color);
-    padding:2px;
-    height: 100px;
-    width:195%;
-}
-
-nav img {
-    width: 5%;
-}
-
-nav a {
-    justify-content: end;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 5px 10px;
-    font-size: 1.2rem;
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-
-section h2 {
-    text-align: center;
-}
-
-section p {
-    text-align: center;
-    column-count: 2;
-    column-gap: 40px;
-}
-
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
-.sociallinks a {
-    text-decoration: none;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-}
-
-head h1 {
-    position: absolute;
-}
-
-article {
-    position: absolute;
-}
-
-article img {
-    float: right;
-}
+*{
+    margin: 0;  
+    padding: 0;
+  }
+  
+  body{
+      background-color: #ffffff;
+      font-family: Verdana, sans-serif;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  h1, h2, h3{
+      color: #688A5A;
+  }
+  
+  h1{
+      font-size: clamp(1rem, 3vw, 3rem);
+      white-space: nowrap;
+  }
+  
+  h2{
+      font-size: clamp(1rem, 2.5vw, 3rem);
+  }
+  
+  p{
+      padding: 1rem;
+      line-height: 3vw;
+      color: #000;
+      font-size: clamp(1rem, 2vw, 2rem);
+  }
+  
+  header, footer{
+      background-color: #0B5D83;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  header{
+      grid-template-columns: 1fr 1fr 2fr;
+  }
+  
+  .head img{
+      width: 200px;
+  }
+  
+  nav {
+      margin: 0 auto;
+      max-width: 760px;
+  }
+  
+  .navigation {
+      list-style: none;
+      display: flex;
+      background-color: #688A5A;
+      text-align: center;
+      border-radius: 10px;
+  }
+  .navigation li {
+      flex: 1 1 auto;
+  }
+  .navigation a {
+      display: block;
+      color: #eee;
+      padding: 1.5vw;
+      text-decoration: none;
+      font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  .navigation a:hover {
+      color: #333;
+      background-color: #688A5A;
+      font-weight: 700;
+      border-radius: 10px;
+  }
+  
+  /*-------------------------------------*/
+  
+  
+  .page{
+      margin: 0 auto;
+  }
+  
+  .hero{
+      position: relative;
+      width: 100%;
+  }
+  
+  .hero img{
+      width: 100%;
+      height: fit-content;
+  }
+  
+  .CTA{
+      background-color: #0b5d8385;
+      padding: 1rem 1rem 1rem 1rem;
+      position: absolute;
+      top: clamp(10px, 2vw, 100px);
+      left: 50px;
+      bottom: clamp(10px, 2vw, 100px);
+      display: grid;
+      align-items: center;
+      width: fit-content;
+  }
+  
+  .CTA h2{
+      opacity: 1;
+      color: #eee;
+      background-color: #688A5A;
+      margin: 1rem;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 4vw;
+  }
+  
+  button{
+      justify-self: center;
+      width: fit-content;
+      padding: .5rem;
+      font-size: 2.5vw;
+      font-weight: bold;
+      color: #eee;
+      background-color: #688A5A;
+      border-radius: 15px;
+      border: none;
+  }
+  
+  button:hover{
+      color: #333;
+  }
+  
+  a{
+      text-decoration: none;
+      color:#ffffff;
+  }
+  
+  a:hover{
+      color: #333;
+  }
+  
+  /*------------------------------*/
+  
+  .main h2{
+      padding: 1rem 1rem 0 1rem;
+  }
+  .main img{
+      margin: 1rem 0;
+      height: 30vw;
+      box-shadow: 10px 10px 5px #333;
+  }
+  
+  .mainCard1{
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      justify-items: center;
+  }
+  
+  .textCard1{
+      grid-column: 1/2;
+      width: 100%;
+  }
+  
+  .mainCard1 picture{
+      grid-column: 2/3;
+      grid-row: 1/2;
+  }
+  
+  .mainCard2{
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      justify-items: center;
+  }
+  
+  .textCard2{
+      grid-column: 2/3;
+      width: 100%;
+  }
+  
+  .mainCard2 picture{
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+  
+  .bottomCard{
+      text-align: center;
+  }
+  
+  .bottomCard button{
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+  }
+  
+  hr{
+      margin: 3vw 0;
+  }
+  
+  /*-------------------------------------------------*/
+  
+  .riverCards{
+      margin: 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr .5fr 1fr;
+      justify-items: center;
+  }
+  
+  .snakeCard, .salmonCard{
+      padding: 1rem;
+      border: rgba(0, 0, 0, 0.315);
+      border-width: 2px;
+      border-style: solid;
+      text-align: center;
+      font-size: 2vw;
+      display: grid;
+      grid-template-rows: 1fr .1fr;
+  }
+  
+  .snakeCard p, .salmonCard p{
+      line-height: clamp(1rem, 3vw, 3rem);
+  }
+  
+  .snakeCard h4, .salmonCard h4{
+      font-size: 3vw;
+      margin: 1rem;
+  }
+  
+  .snakeCard{
+      grid-column: 1/2;
+  }
+  
+  .salmonCard{
+      grid-column: 3/4;
+  }
+  
+  /*------------------------------*/
+  
+  footer{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  
+  .social{
+      justify-self: right;
+      padding: 10px;
+  }
+  
+  footer p{
+      color: #ffffff;
+  }
+  
+  .social img{
+      width: 50px;
+      height: 50px;
+  }
+  
+  /*-------------------------------------------*/
+  
+  .accordion {
+      background-color: #688A5A;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 2vw;
+      margin: 1vw 0;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: clamp(1rem, 2.5vw, 3rem);
+      transition: .4s;
+    }
+    
+    .active, .accordion:hover {
+      color: #333;
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }

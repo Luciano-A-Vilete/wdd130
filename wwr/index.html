@@ -1,31 +1,93 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vilete's Rafting</title>
+    <meta name="description" content="Vilete's Rafting - Your adventure starts here!" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Luciano Armando Vilete | WDD 130</title>
-    <meta name="description" content="A personal Web Page create for the WD130 BYU Course. By Luciano Armando Vilete">
-    <meta name="author" content="Luciano Armando Vilete">
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
-
-<body>
-    <header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="head">
+        <img src="images/brownrafting.jpeg" alt="logo">
+        <h1>Vilete's Rafting</h1>
         <nav>
-            <img src="images/brownrafting.jpeg" alt="logo">
-            <a href="index.html" target="_blank">Home</a>
-            <a href="about.html" target="_blank">About Us</a>
-            <a href="trips.html" target="_blank">Trips</a>
-            <a href="contact.html" target="_blank">Contact</a>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book a trip</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-        <p>Copyright &copy; 2024 | Luciano Armando Vilete | Pernambuco, Brazil</p>
-    </footer>
-</body>
+      </header>
 
+      <main>
+        <div class="hero">
+            <img src="images/riverBanner.jpg" alt="Panoramic River" >
+            <div class="CTA">
+              <h2>Explore History With Us</h2>
+              <button onclick="window.location.href='booking.html'">Book Now!</button>
+            </div>
+        </div>
+
+        <div class="main">
+          <section class="mainCard1">
+            <div class="textCard1">
+              <h2>We Run Rivers to relax</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.   Expedita
+                necessitatibus aspernatur consequuntur rerum modi animi   corporis
+                similique. Suscipit inventore voluptatum a vero voluptatibus
+                eveniet repudiandae? Dolore, unde? Porro, necessitatibus  dolores.
+              </p>
+            </div>
+            <picture>
+              <img src="images/canyonRiver.jpg" alt="picture" />
+            </picture>
+          </section>
+
+          <section class="mainCard2">
+            <div class="textCard2">
+              <h2>We teach you about the native species</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.  Delectus
+                fugiat similique eum quae quod neque adipisci distinctio minima
+                earum mollitia recusandae facilis blanditiis tenetur temporibus
+                totam, assumenda, aspernatur incidunt necessitatibus.
+              </p>
+            </div>  
+            <picture>
+              <img src="images/lizard.jpg" alt="Lizard on Rock" />
+            </picture>
+          </section>
+        
+          <hr>
+
+          <section class="bottomCard">
+            <h2>Have more questions?</h2>
+            <p>
+              Contact one of our representatives and we will help you find the adventure you're looking for!
+            </p>
+            <button onclick="document.location='mailto:thurspam@gmail.com'">Contact Us!</button>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <p>2021 Dry Oar - Spencer Thurman - 999-999-9999</p>
+        <div class="social">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebookLogo.png" alt="Youtube Logo"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitterLogo.png" alt="Twitter Logo"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img src="images/instagramLogo.png" alt="Instagram Logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

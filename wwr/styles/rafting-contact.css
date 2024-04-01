@@ -1,171 +1,352 @@
-/* Reset CSS */
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+/* CSS */
+#content {
+    max-width:1600px;
+    margin:0 auto;
+}
+
+nav a{
+    text-align:center;
+    color:#000;
+    text-decoration:none;
+    padding: 35px;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around; 
+}
+#background {
+    height:725px;
+    background-color: #4A4E69 ;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.book,.join {
+    background-color:#C9ADA7;
+    color:#000;
+    text-decoration:none;
+    text-align: center;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color:#26547C;
+    color:#000;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color:#000;
+    text-decoration:none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color:#FFF;
+}
+
+#hero-img {
+    width:100%;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+nav a:hover,.book:hover,.join:hover {
+    background-color:#C9ADA7;
+    color:#FFF;
+}
+h4,.msg h2 {
+    color:#000;
+}
+
+#hero-msg h4 {
+    text-align: center;
+    color: white;
+}
+
+#hero-msg h1,#hero-msg div,.button-box,main section {
+    text-align: center;
+}
+
+header {
+    background-color:#26547C;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+body {
+    background-color: #FFF;
+    font-family: Macondo, Helvetica, sans-serif;
+    font-size: 22px;
     margin: 0;
     padding: 0;
 }
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+.logo {
+width:80px;
 }
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Styles */
-/* Header Styles */
-header {
-    background-color: #26547C;
-    color: #fff;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header img {
-    width: 75px;
-}
-
-nav {
-    display: flex;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-}
-
-/* Employee Profiles Styles */
-section {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-}
-
-.contact-info {
-    display: flex;
-}
-
-section figure {
-    flex: 0 0 30%; /* Adjust the width as needed */
-    text-align: center;
-}
-
-section figure img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 30%;
-    height: 30%;
-    border-radius: 0; /* Remove border radius */
-}
-
-section figure figcaption {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.home-title {
+    color:#C9ADA7;
+    font-family: Kalam;
+    font-size: 2em;
     margin-top: 10px;
-    font-weight: bold;
+}
+.msg p {
+    color:#000;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.msg {
+    background-color:#C9ADA7;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+h2 {
+    margin: 0;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #4A4E69;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.main section img {
+    box-sizing: border-box;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.card-img, .mountains {
+    width: 100%
+}
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
-
-h1, h2 {
-    color: #26547C;
+/* ------------------------- ABOUT US PAGE ------------------------- */
+.title-aboutus {
     text-align: center;
 }
-
-p {
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 1.6;
+.title-aboutus h2 {
+    margin-top: 70px;
+}
+.title-aboutus img {
+    width: 40%;
 }
 
-/* Form Styles */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+.aboutus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    box-sizing: border-box;
+    
+    
 }
+.question{
+    background: #C9ADA7;
+    margin: 70px;
+    word-wrap: break-word;
+    vertical-align: middle;
+    
 
-form label {
-    display: block;
-    margin-bottom: 5px;
 }
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
+.aboutus-grid .question h3  {
+    font-size: 16px;
     padding: 10px;
-    margin-bottom: 10px;
+}
+.aboutus-grid .question p {
+    font-size: 14px;
+    padding: 10px;
+}
+.aboutus-grid .question li {
+    font-size: 14px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form input[type="radio"] {
-    margin-right: 5px;
-}
-
-form input[type="submit"] {
-    background-color: #26547C;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-    background-color: #1d3e5f;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #26547C;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.additional-link {
-    margin-bottom: 20px;
-}
-
-.additional-link a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.additional-link a:hover {
-    text-decoration: underline;
-}
-
-.sociallinks {
-    margin-top: 20px;
-}
-
-.sociallinks a {
-    margin: 0 10px;
-}
-
-.sociallinks img {
-    width: 30px;
-    height: 30px;
-}
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      /* make this element invisible until we are ready for it */
+      display: none;      
+  }
+  .moveDown {
+      margin-top: 3em;
+  }
