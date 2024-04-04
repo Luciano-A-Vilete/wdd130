@@ -1,111 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vilete's rafting</title>
-    <meta name="description" content="Vilete's Rafting - Booking trips page" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="page">
-      <header class="head">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips</title>
+    <meta name="author" content="Luciano Armando Vilete">
+    <meta name="description" content="Trips to Safty Rafting">
+    <link rel="stylesheet" href="styles/trips.css">
+    
+</head>
+<body>
+    <header>
         <img src="images/brownrafting.jpeg" alt="logo">
-        <h1>Vilete's Rafting</h1>
         <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="booking.html">Book a trip</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-          </ul>
+            <a href="index.html">Home page</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
-      </header>
-
-      <main>
+    </header>
+    <main>
         <div class="hero">
-          <img src="images/riverBanner.jpg" alt="Panoramic River" />
-          <div class="CTA">
-            <h2>Explore History With Us</h2>
-            <button onclick="window.location.href='booking.html'">Book Now!</button>
-          </div>
-        </div>
-
-        <div class="main">
-          <div class="faq">
-            <button class="accordion">How long is an adventrure?</button>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+            <img src="images/trip-bg.jpg" alt="">
+            <h1> Trips</h1>
+            <div class="contact-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="contact.html">Contact US</a>
             </div>
-
-            <button class="accordion">Is rafting dangerous?</button>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-
-            <button class="accordion">How did we get started?</button>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-
-            <script>
-              var acc = document.getElementsByClassName("accordion");
-              var i;
-
-              for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                  } else {
-                    panel.style.display = "block";
-                  }
-                });
-              }
-            </script>
-          </div>
-
-          <hr>
-
-          <section class="bottomCard">
-            <h2>Have more questions?</h2>
-            <p>
-              Contact one of our representatives and we will help you find the adventure you're looking for!
-            </p>
-            <button onclick="document.location='mailto:thurspam@gmail.com'">Contact Us!</button>
-          </section>
         </div>
-      </main>
-
-      <footer>
-        <p>2024 | Vilete's Rafting | Luciano Armando Vilete | +55-99-99999-9999</p>
-        <div class="social">
-          <a href="https://www.facebook.com"
-            ><img src="images/facebookLogo.png" alt="Youtube Logo"
-          /></a>
-          <a href="https://www.twitter.com"
-            ><img src="images/twitterLogo.png" alt="Twitter Logo"
-          /></a>
-          <a href="https://www.instagram.com"
-            ><img src="images/instagramLogo.png" alt="Instagram Logo"
-          /></a>
+        <h2 class="grid-title">Rafting Adventure</h2>
+        <div class="trip-grade">
+            <div class="trip1">
+                <img src="images/image-2.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem, ipsum dolor. Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p class="bottom"> $75</p>
+            </div>
+            <div class="trip2">
+                <img src="images/image-4.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem, ipsum dolor. Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p class="bottom"> $100</p>
+            </div>
+            <div class="trip3">
+                <img src="images/image-3.jpg" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem, ipsum dolor. Lorem, ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p class="bottom"> $99</p>
+                
+            </div>
         </div>
-      </footer>
-    </div>
-  </body>
+        <table>
+            <caption>Trips</caption>
+            <tr>
+                <th> Trip</th>
+                <th> Description</th>
+                <th>Price</th>
+            </tr>
+            
+            <tr>
+                <td class="trip-table">Lorem, ipsum.</td>
+                <td class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad maiores doloribus eum consectetur nobis eveniet facere odio tenetur aspernatur, nesciunt a quam. Eveniet fuga velit voluptatibus, eos iure accusamus?</td>
+                <td class="price">$100</td>
+            </tr>
+            <tr>
+                <td class="trip-table">Lorem, ipsum.</td>
+                <td class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad maiores doloribus eum consectetur nobis eveniet facere odio tenetur aspernatur, nesciunt a quam. Eveniet fuga velit voluptatibus, eos iure accusamus?</td>
+                <td class="price">$99</td>
+            </tr>
+            <tr>
+                <td class="trip-table">Lorem, ipsum.</td>
+                <td class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad maiores doloribus eum consectetur nobis eveniet facere odio tenetur aspernatur, nesciunt a quam. Eveniet fuga velit voluptatibus, eos iure accusamus?</td>
+                <td class="price">$85</td>
+            </tr>
+            <tr>
+                <td class="trip-table">Lorem, ipsum.</td>
+                <td class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad maiores doloribus eum consectetur nobis eveniet facere odio tenetur aspernatur, nesciunt a quam. Eveniet fuga velit voluptatibus, eos iure accusamus?</td>
+                <td class="price">$75</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        
+        <p>&copy;2024 | Vilete's Rafting | Luciano Armando Vilete | +55-99-99999-9999</p>
+        
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_icon.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram_icon.png" alt="instagram icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_icon.png" alt="linkedin icon"></a>
+        </div>
+    </footer>
+</body>
 </html>
