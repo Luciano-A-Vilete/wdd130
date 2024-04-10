@@ -3,66 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review: Vilete's Rafting Company. About Us</title>
-    <meta name="description" content="Your adventure starts here!">
-    <meta name="author" content="Luciano Vilete | WDD 130">
-    <link rel="stylesheet" href="site-plan-rafting.css" />
+    <title>Home Page</title>
+    <meta name="author" content="Mosiah Andrade">
+    <meta name="description" content="Home Page to Safty Rafting">
+    <link rel="stylesheet" href="styles/index.css">
+    
+</head>
 <body>
     <header>
         <img src="images/brownrafting.jpeg" alt="logo">
-        <h1>Vilete's Rafting</h1>
         <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="trips.html">Book a trip</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
+            <a href="index.html">Home page</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
-        <h2>Overview</h2>
+        <section class="top-page">
+            <div class="text-box">
+                <h1>Safty Rafting</h1>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <button onclick="window.location.href='contact.html'">Contact US</button>
 
-        <h3>Purpose</h3>
-        <p>Show how you can practice Rafting with security</p>
-        <h3>Audience</h3>
-        <p>Person that never practice Rafting and any other radical sport, they want to joy some thing diferent, they expect a orientation to the fisrt steps to water rafting</p>
-
-        <h2>Branding</h2>
-
-        <h3>Website logo</h3>
-        <img src="images/brownrafting.jpeg" alt="logo" width="100">
-        
-        <h2>Style guide</h2>
-        
-        <h3>Color palette</h3>
-        <ul>
-            <li class="primary-color">Primary color: #26547C</li>
-            <li class="secondary-color">Secondary color: #EF476F</li>
-        </ul>
-        <p>Palette URL: <a href="https://coolors.co/palette/006d77-83c5be-edf6f9" target="_blank">https://coolors.co/palette/006d77-83c5be-edf6f9</a></p>
-        <h3>Typography</h3>
-        <h4 class="Typography">Poppins</h4>
-        <h4>Normal Text/paragraph Exemple Font</h4>
-        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas est ipsum doloremque aperiam eveniet deleniti fuga optio consectetur dignissimos, obcaecati, ea natus excepturi dolores laboriosam deserunt explicabo pariatur id repellendus!</p>
-        <h4>Colored Callout Exemple font</h4>
-        <p class="colored">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dicta, modi accusantium, porro, perferendis consectetur totam excepturi delectus repudiandae neque sint eum ullam error eligendi nisi minus quos nostrum quae!</p>
-        <h3>Navegation</h3>
-        <nav>
-
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Trips</a>
-            <a href="#">Contact us</a>
-        </nav>
-
-        <h2>Wireframes</h2>
-        <h3>Home Page Wireframes</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-home.png" alt="Home Page Wireframe Example Design" width="700">
-        <h3>About Us Page Wireframe</h3>
-        <img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Wireframe Example Design" width="700">
+            </div>
+            <img src="images/river_background.jpeg" alt="top page image">
+        </section>
+ 
+        <section class="newsletter-box">
+            <div class="nw-text-box">
+                <h2>NewsLetter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <form>
+                    <fieldset>
+                        <div class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name Here">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="your@email.com">
+                        </div>
+                    </fieldset>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section class="services">
+            <h2 class="grid-title">Rafting Adventure</h2>
+            <div class="trip-grade">
+                <div class="trip1" onclick="window.location.href='trips.html'">
+                    <img src="images/roya-ann-miller-1.jpg" alt="rafting photo">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p class="bottom"> $75</p>
+                </div>
+                <div class="trip2" onclick="window.location.href='trips.html'">
+                    <img src="images/anna-sullivan-1.jpg" alt="rafting photo">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p class="bottom"> $100</p>
+                </div>
+                <div class="trip3" onclick="window.location.href='trips.html'">
+                    <img src="images/outward-bound-1.jpg" alt="rafting photo">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p class="bottom"> $99</p>
+                    
+                </div>
+            </div>
+            <button onclick="window.location.href='trips.html'">Trips</button>
+        </section>
+        <section class="cta">
+            <img src="images/jackalope-west-1.jpg" alt="rafting photo">
+            <div>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla?</p>
+                <button onclick="window.location.href='trips.html'">Contact US</button>
+            </div>
+            
+        </section>
     </main>
     <footer>
-        <p>&copy;2024 Rafting Site Document | Luciano Armando Vilete | WWD 130</p>
+        
+        <p>&copy; 2024 Luciano Armando Vilete | WDD 130 </p>
+        
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook_icon.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram_icon.png" alt="youtube icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_icon.png" alt="linkedin icon"></a>
+        </div>
     </footer>
 </body>
 </html>
