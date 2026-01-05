@@ -1,11 +1,14 @@
 nav {
+    max-width: 100%;
     background-color: darkblue;
+    margin: 15px auto 10px auto;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    display: block;
+    display: inline;
     padding: 20px;
 }
 
@@ -26,13 +29,14 @@ p {
 }
 
 main {
-    max-width: 480px;
+    max-width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
@@ -45,7 +49,9 @@ aside img {
 }
 
 footer {
-    margin-top: 15px;
+    max-width: 100%;
+    margin: 50px auto 10px auto;
     border-top: 1px solid #000;
     text-align: center;
+    padding-top: 10px;
 }
