@@ -33,10 +33,14 @@ article {
     padding: 8px;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
 }
 
 header {
