@@ -40,7 +40,10 @@ h1 {
 
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    width: fit-content;
 }
 
 header {
@@ -70,7 +73,6 @@ nav a:hover {
 
 .hero {
     position: relative;
-    /* ✅ Exigido pela auditoria */
 }
 
 .hero img {
