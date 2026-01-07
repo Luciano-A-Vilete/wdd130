@@ -60,18 +60,44 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     color: #000;
 }
 
 .hero {
     position: relative;
+    /* ✅ Exigido pela auditoria */
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.7);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
 }
 
 h1 {
