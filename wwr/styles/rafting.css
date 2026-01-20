@@ -43,9 +43,7 @@ h1 {
 
 h2 {
     font-family: var(--heading-font);
-    /* Texto verde escuro para acessibilidade (Alto Contraste) */
     color: var(--primary-color);
-    /* Linha laranja decorativa usando a variável secondary */
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 5px;
     width: fit-content;
@@ -53,7 +51,6 @@ h2 {
 
 /* --- 4. CABEÇALHO E NAVEGAÇÃO (Grid & Flex) --- */
 header {
-    /* ✅ CSS GRID: Cria colunas para Logo e Menu */
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
@@ -68,17 +65,14 @@ header img {
 }
 
 nav {
-    /* Ocupa a segunda coluna do grid */
     display: flex;
     justify-content: flex-end;
-    /* Empurra o menu para a DIREITA */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    /* Espaço entre os links */
 }
 
 nav a {
@@ -91,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     color: var(--primary-color);
     border-radius: 4px;
 }
@@ -147,7 +141,6 @@ nav a:hover {
 
 .adventures figure {
     width: 18%;
-    /* Permite 5 imagens numa linha */
     margin: 0;
 }
 
@@ -176,7 +169,6 @@ footer {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    /* Texto na Esquerda, Ícones na Direita */
     align-items: center;
     border-top: 1px solid #ccc;
 }
