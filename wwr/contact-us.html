@@ -1,101 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting</title>
+    <title>Contact Us - Dry Oar Rafting</title>
     <meta name="description"
-      content="Entre em contacto com a White Water Rafting. Estamos em Salt Lake City para o ajudar.">
+      content="Contact Dry Oar Rafting for inquiries, reservations, and suggestions. We are here to serve you.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="WWR Logo">
+        <div class="logo">
+            <img src="images/logo.png" alt="Dry Oar Rafting Logo">
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contactus.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="contact-header">
-            <h1>Contacte-nos</h1>
-            <div class="contact-grid">
-                <div class="contact-details">
-                    <h2>Onde Estamos</h2>
-                    <p><strong>Endereço:</strong> 123 Main Street, Salt Lake City, UT</p>
-                    <p><strong>Telefone:</strong> (801) 555-1234</p>
-                    <p><strong>Email:</strong> adventure@wwr.com</p>
-                </div>
-                <div class="contact-map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.844322409131!2d-111.8910473!3d40.7607793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f50a31630a97%3A0xc3f7a402377b69c!2sSalt%20Lake%20Temple!5e0!3m2!1sen!2sbr!4v1700000000000"
-                      width="100%" height="250" style="border:0;" allowfullscreen=""
-                      loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
+    <main class="contact-main">
+        <h1>Contact Us</h1>
 
-        <section class="team-section">
-            <h2>A Nossa Equipa</h2>
-            <div class="team-grid">
-                <figure>
-                    <img src="images/profile.jpg" alt="CEO da WWR">
-                    <figcaption>João Silva - Diretor de Expedição</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/profile.jpg" alt="Guia Principal">
-                    <figcaption>Maria Santos - Guia Sénior</figcaption>
-                </figure>
-            </div>
-        </section>
+        <div class="contact-intro">
+            <p>We are here to serve you. If you have any questions about our rafting trips, need
+                help planning your adventure, or just want to say hello, please don't hesitate to
+                reach out. Our team is ready to assist you!</p>
+        </div>
 
-        <section class="form-container">
-            <h2>Envie-nos uma Mensagem</h2>
-            <form action="#" method="post">
-                <div class="form-field">
-                    <label for="name">Nome Completo:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-field">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-field">
-                    <label>Motivo do Contacto:</label>
-                    <div class="radio-options">
-                        <label><input type="radio" name="purpose" value="inquiry"> Pergunta
-                            Geral</label>
-                        <label><input type="radio" name="purpose" value="reservation">
-                            Reserva</label>
-                        <label><input type="radio" name="purpose" value="feedback"> Feedback</label>
+        <div class="contact-grid">
+            <section class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form action="#" method="post">
+                    <div class="form-item">
+                        <label for="user_name">Full Name:</label>
+                        <input type="text" id="user_name" name="user_name" required>
                     </div>
+                    <div class="form-item">
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" name="user_email" required>
+                    </div>
+                    <fieldset class="radio-group">
+                        <legend>Purpose of Message:</legend>
+                        <label><input type="radio" name="purpose" value="inquiry" checked> General
+                            Inquiry</label>
+                        <label><input type="radio" name="purpose" value="reservation"> Reservation
+                            Question</label>
+                        <label><input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion</label>
+                    </fieldset>
+                    <div class="form-item">
+                        <label for="user_message">Message:</label>
+                        <textarea id="user_message" name="user_message" rows="5"
+                          required></textarea>
+                    </div>
+                    <div class="checkbox-item">
+                        <label><input type="checkbox" name="newsletter" value="yes"> Please
+                            subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="company-info-section">
+                <h2>Our Location</h2>
+                <address>
+                    <strong>Dry Oar Rafting</strong><br>
+                    123 River Road<br>
+                    Salmon, ID 83466<br><br>
+                    📧 <a href="mailto:info@dryoarrafting.com">info@dryoarrafting.com</a><br>
+                    📞 <a href="tel:+12085550100">(208) 555-0100</a>
+                </address>
+                <div class="map-container">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.690763539126!2d-113.9000176844629!3d45.17904797909866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53509b4f9a0c0001%3A0x6c6e76e5e5e5e5e5!2sSalmon%2C%20ID!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                      width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="form-field">
-                    <label for="comments">Sua Mensagem:</label>
-                    <textarea id="comments" name="comments" rows="5"></textarea>
-                </div>
-                <div class="form-field checkbox">
-                    <label><input type="checkbox" name="subscribe" checked> Desejo receber novidades
-                        por e-mail</label>
-                </div>
-                <button type="submit" class="btn-submit">Enviar Agora</button>
-            </form>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2026 White Water Rafting | Luciano Vilete</p>
+        <p>&copy; 2024 | Dry Oar Rafting | Luciano A Vilete</p>
         <nav class="social-links">
-            <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
-            <a href="#"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-logo.png" alt="LinkedIn">
+            </a>
         </nav>
-        <p><a href="temp-site-plan.html">Site Plan</a></p>
+        <p><a href="../site-plan-rafting.html">Site Plan</a></p>
     </footer>
 </body>
 
