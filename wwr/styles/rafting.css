@@ -192,3 +192,58 @@ footer p {
     width: 30px;
     height: auto;
 }
+
+/* --- Estilos da Página Contact Us --- */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.address,
+.map {
+    flex: 1 1 300px;
+    /* Responsivo: ocupa 300px ou divide o espaço */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    /* Usa a cor secundária do teu root */
+    border-radius: 8px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--accent-color);
+    /* Usa o destaque do teu CSS */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
