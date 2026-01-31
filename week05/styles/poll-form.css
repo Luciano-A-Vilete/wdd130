@@ -1,0 +1,84 @@
+/* Configurações básicas de página */
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilização do formulário (container branco) */
+form {
+    width: 400px;
+    /* Largura fixa para manter o aspecto da imagem */
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    display: grid;
+    /* Usar Grid facilita muito o empilhamento */
+    gap: 10px;
+    /* Espaço entre as linhas */
+}
+
+/* Faz labels, inputs, selects e textareas ocuparem a linha toda */
+label,
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+/* Estilo específico para as Labels */
+label {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo para campos de entrada de texto e seleção */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: #eee;
+    /* Cor de fundo levemente cinza como na imagem */
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* Essencial para o padding não quebrar a largura */
+}
+
+/* Ajuste para o Checkbox (não deve ocupar a linha toda sozinho) */
+input[type="checkbox"] {
+    width: auto;
+    margin: 10px 0;
+}
+
+/* Botão de Envio destacado */
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #005A9C;
+    /* Azul profissional */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #004070;
+}
+
+/* Estilo do Placeholder */
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
