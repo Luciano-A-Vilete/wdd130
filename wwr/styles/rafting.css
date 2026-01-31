@@ -1,19 +1,12 @@
 /* --- 1. Variáveis e Reset Geral --- */
 :root {
     --primary-color: #005f73;
-    /* Azul Petróleo Escuro */
     --secondary-color: #0a9396;
-    /* Azul Petróleo Claro */
     --accent1-color: #94d2bd;
-    /* Verde Água */
     --accent2-color: #e9d8a6;
-    /* Bege/Amarelo */
     --text-color: #333333;
-    /* Cinzento Escuro para texto */
     --light-text: #ffffff;
-    /* Branco */
     --font-heading: 'Arial', sans-serif;
-    /* Podes mudar para a tua fonte do Google Fonts */
     --font-body: 'Verdana', sans-serif;
 }
 
@@ -29,7 +22,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- 2. Cabeçalho (Header) e Navegação --- */
+/* --- 2. Cabeçalho (Header) --- */
 header {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
@@ -62,8 +55,7 @@ nav a:hover {
     border-radius: 4px;
 }
 
-/* --- 3. Página de Contacto (Contact Us) --- */
-
+/* --- 3. Conteúdo Principal (Contact Main) --- */
 .contact-main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -73,26 +65,18 @@ nav a:hover {
 .contact-main h1 {
     text-align: center;
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: var(--font-heading);
     font-size: 2.5rem;
 }
 
-/* Estilo para a secção de introdução ("We are here to serve you") */
-.contact-intro {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    /* Espaço em baixo para separar do formulário */
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Grid Layout: Formulário à esquerda, Mapa à direita */
+/* Grid Layout: Mapa (Esq) e Formulário (Dir) */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-bottom: 4rem;
+    /* Espaço para separar da secção de imagens abaixo */
 }
 
 .contact-form-section h2,
@@ -103,7 +87,27 @@ nav a:hover {
     padding-bottom: 5px;
 }
 
-/* Estilos do Formulário */
+/* --- Estilos do Lado Esquerdo (Informações) --- */
+.company-info-section address {
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.company-info-section address a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map-container iframe {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Estilos do Lado Direito (Formulário) --- */
 .form-item {
     margin-bottom: 15px;
 }
@@ -124,7 +128,6 @@ nav a:hover {
     font-family: inherit;
 }
 
-/* Estilo dos Botões de Rádio */
 .radio-group {
     border: 1px solid #ddd;
     padding: 15px;
@@ -149,7 +152,6 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* Botão de Envio */
 .submit-btn {
     background-color: var(--primary-color);
     color: var(--light-text);
@@ -166,34 +168,41 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
-/* Estilo da Secção de Informações (Lado Direito) */
-.company-info-section address {
-    font-style: normal;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.8;
+/* --- 4. Secção "We are here to serve you" (Imagens) --- */
+.serve-you-section {
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.company-info-section address a {
+.serve-you-section h2 {
     color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
 }
 
-.map-container iframe {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.serve-images-grid {
+    display: flex;
+    justify-content: space-between;
+    /* Distribui as imagens igualmente */
+    gap: 20px;
 }
 
-/* --- 4. Rodapé (Footer) Padronizado --- */
+.serve-images-grid img {
+    width: 32%;
+    /* Cada imagem ocupa cerca de um terço */
+    height: auto;
+    object-fit: cover;
+    /* Garante que a imagem não distorce */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* --- 5. Rodapé (Footer) --- */
 footer {
     background-color: var(--secondary-color);
     color: var(--light-text);
     padding: 2rem;
     margin-top: 4rem;
-
-    /* Flexbox para alinhar os 3 elementos (Copyright, Social, Siteplan) */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -216,18 +225,10 @@ footer a:hover {
 .social-links img {
     width: 30px;
     height: 30px;
-    transition: transform 0.2s;
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
-    /* Efeito de zoom ao passar o rato */
-}
-
-/* --- 5. Responsividade (Mobile) --- */
+/* --- 6. Responsividade (Mobile) --- */
 @media screen and (max-width: 700px) {
-
-    /* O cabeçalho fica em coluna */
     header {
         flex-direction: column;
         text-align: center;
@@ -239,12 +240,21 @@ footer a:hover {
         gap: 10px;
     }
 
-    /* A Grid de contacto passa para uma coluna */
+    /* Empilha o grid principal (Mapa em cima, Form em baixo) */
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    /* O rodapé empilha os elementos */
+    /* Empilha as imagens de "Serve you" */
+    .serve-images-grid {
+        flex-direction: column;
+    }
+
+    .serve-images-grid img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
