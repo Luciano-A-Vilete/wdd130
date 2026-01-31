@@ -1,42 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Form Activity</title>
+    <title>HTML Quiz Form | WDD 130</title>
+    <meta name="description"
+      content="A simple HTML quiz form for practicing web development standards.">
+    <meta name="author" content="Luciano Vilete">
     <link rel="stylesheet" href="styles/quizz.css">
 </head>
 
 <body>
+    <header>
+        <h1>HTML Quiz</h1>
+    </header>
     <main>
-        <h1>✅ Basic HTML & CSS Quiz</h1>
-        <form class="box">
-            <div class="quiz-item box">
-                <label for="q1">1. What does the acronym CSS stands for?</label>
-                <input type="text" id="q1" name="q1">
-            </div>
-            <div class="quiz-item box">
-                <label for="q2">2. How are ID and Class atributes selected in CSS?</label>
-                <textarea rows="3" id="q2" name="q2"></textarea>
-            </div>
-            <div class="quiz-item box">
-                <label for="q3">3.Which of the following is a valid CSS comment?</label>
-                <select id="q3" name="q3">
-                    <option value="" selected disabled>Choose one ...</option>
-                    <option value="a">-- a CSS valid comment --</option>
-                    <option value="b">!-- this is a comment --!</option>
-                    <option value="c">/* a CSS comment */</option>
-                </select>
-            </div>
-            <div class="quiz-item box">
-                <label for="q4">4. What is the bottom margin given this declaration?</label>
-                <code class="box">margin: 10px 5px 15px</code>
-                <input type="text" id="q4" name="q4">
-            </div>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Student Information</legend>
+                <div class="form-item">
+                    <label for="student-name">Full Name:</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                </div>
+                <div class="form-item">
+                    <label for="student-email">Email Address:</label>
+                    <input type="email" id="student-email" name="student-email" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quiz Questions</legend>
+
+                <div class="form-item">
+                    <p>1. What does HTML stand for?</p>
+                    <label><input type="radio" name="q1" value="correct" required> HyperText Markup
+                        Language</label>
+                    <label><input type="radio" name="q1" value="wrong"> Hyperlinks and Text Markup
+                        Language</label>
+                </div>
+
+                <div class="form-item">
+                    <label for="q2">2. What is the correct HTML element for the largest
+                        heading?</label>
+                    <select id="q2" name="q2" required>
+                        <option value="" disabled selected>Select an answer</option>
+                        <option value="h1">&lt;h1&gt;</option>
+                        <option value="head">&lt;head&gt;</option>
+                        <option value="heading">&lt;heading&gt;</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="feedback">3. Any comments or feedback about the quiz?</label>
+                    <textarea id="feedback" name="feedback" rows="4"></textarea>
+                </div>
+            </fieldset>
+
             <button type="submit">Submit Quiz</button>
         </form>
     </main>
+    <footer>
+        <p>&copy; 2026 | HTML Quiz | Luciano Vilete</p>
+    </footer>
 </body>
 
 </html>
