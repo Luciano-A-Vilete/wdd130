@@ -271,4 +271,294 @@ footer p {
         text-align: center;
         gap: 20px;
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-msg {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .hero-msg h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- 7. Estilos da Home Page (Adicionar ao rafting.css) --- */
+
+/* Hero Image & Absolute Positioning */
+.hero {
+    position: relative;
+    /* Pai relativo para o filho absoluto se posicionar */
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Remove espaço extra em baixo da imagem */
+}
+
+.hero-msg {
+    position: absolute;
+    /* Posicionamento absoluto sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centraliza exata no meio horizontal e vertical */
+    background-color: rgba(0, 95, 115, 0.8);
+    /* Fundo semi-transparente para leitura */
+    color: var(--light-text);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.hero-msg h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: var(--font-heading);
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #d4c085;
+}
+
+/* Features Grid Section */
+.features {
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas iguais */
+    gap: 30px;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.final-cta {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* --- 8. Estilos da Página Trips (Adicionar ao rafting.css) --- */
+
+.trips-hero {
+    text-align: center;
+    background-color: #eee;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trips-hero h1 {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+}
+
+/* Trips Grid Layout */
+.trips-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    /* Cria colunas responsivas automaticamente: mínimo de 300px, máximo 1 fração */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Garante que a imagem não saia das bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+    /* Efeito de levantar ao passar o rato */
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 20px;
+}
+
+.trip-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.trip-info p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Badges para níveis de dificuldade */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.level-easy {
+    background-color: #2a9d8f;
+}
+
+.level-medium {
+    background-color: #e9c46a;
+    color: #333;
+}
+
+.level-hard {
+    background-color: #e76f51;
+}
+
+/* Estilos da Tabela */
+.trips-table-section {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 20px;
+    overflow-x: auto;
+    /* Permite scroll horizontal em telemóveis se a tabela for larga */
+}
+
+.trips-table-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remove espaços entre as células */
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    font-family: var(--font-heading);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Efeito "zebrado" nas linhas */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--secondary-color);
+    /* Fundo colorido para destaque */
+    color: var(--light-text);
+    margin-top: 2rem;
+}
+
+.call-to-action h2 {
+    color: var(--light-text);
+    /* Texto branco sobre fundo colorido */
+    margin-bottom: 1rem;
+}
+
+.call-to-action p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.call-to-action .cta-button {
+    background-color: var(--accent2-color);
+    color: var(--text-color);
+    border: 2px solid var(--accent2-color);
+}
+
+.call-to-action .cta-button:hover {
+    background-color: transparent;
+    color: var(--light-text);
 }
