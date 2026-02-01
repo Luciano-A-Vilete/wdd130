@@ -1,7 +1,9 @@
 /* --- 1. Variáveis e Reset Geral --- */
 :root {
     --primary-color: #005f73;
+    /* Azul Petróleo Escuro (Bom contraste com branco) */
     --secondary-color: #0a9396;
+    /* Azul Petróleo Claro (Usar apenas para detalhes, não texto) */
     --accent1-color: #94d2bd;
     --accent2-color: #e9d8a6;
     --text-color: #333333;
@@ -25,6 +27,8 @@ body {
 /* --- 2. Cabeçalho (Header) --- */
 header {
     background-color: var(--primary-color);
+    color: var(--light-text);
+    /* CORREÇÃO 1: Garante que texto solto no header seja branco */
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -81,7 +85,8 @@ nav a:hover {
 
 .contact-form-section h2,
 .company-info-section h2 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+    /* CORREÇÃO 2: Mudado de secondary para primary para maior contraste */
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--accent1-color);
     padding-bottom: 5px;
@@ -199,7 +204,8 @@ nav a:hover {
 
 /* --- 5. Rodapé (Footer) --- */
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    /* CORREÇÃO 3: Mudado para primary para suportar texto branco */
     color: var(--light-text);
     padding: 2rem;
     margin-top: 4rem;
@@ -217,12 +223,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.social-links {
+.socialmedia {
     display: flex;
     gap: 15px;
 }
 
-.social-links img {
+.socialmedia img {
     width: 30px;
     height: 30px;
 }
